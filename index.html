@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Juros composto</title>
+        <meta charset="utf-8">
+         <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="_img/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="_css/style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="back ">
+                <img class="logo" src="https://storage.googleapis.com/atados-v3/user-uploaded/images-large/e8d4e9bf-6096-49a9-81e4-a39bb0bfec77.png">
+            </div>    
+        </header>
+        <div class="container my-3">
+            <div class="row justify-content-center">
+               <div class="col-6 simu">
+                <h1>Simulação de investimento</h1>
+                <p>Complete os dados abaixo:</p>
+                <br />
+                   <form class="form-dados" method="post">
+                        <div class="mb-3">
+                            <label class="mb-2 form-label">Nome:</label>
+                            <input type="text" class="sombra form-control" id="nome" name="nome" aria-describedby="Preencha seu nome:">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mb-2 form-label">Mensalidade:</label>
+                            <input type="number" class="sombra form-control" id="mensalidade" name="mensalidade" aria-describedby="Preencha o valor mensal:">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mb-2 form-label">Taxa:</label>
+                            <input type="number" class="sombra form-control" id="taxa" name="taxa" aria-describedby="Preencha o valor mensal:">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mb-2">Tempo</label>
+                            <select class="sombra form-select form-select-sm" aria-label=".form-select-sm example" id="tempo" name="tempo" aria-describedby="Preencha o tempo:">
+                                <option selected>Selecione o tempo</option>
+                                <option value="1">Um ano</option>
+                                <option value="2">Dois anos</option>
+                                <option value="3">Três anos</option>
+                                <option value="4">Quatro anos</option>
+                                <option value="5">Cinco anos</option>
+                                <option value="6">Seis anos</option>
+                                <option value="7">Sete anos</option>
+                                <option value="8">Oito anos</option>
+                                <option value="9">Nove anos</option>
+                                <option value="10">Dez anos</option>
+                                <option value="20">20 anos</option>
+                                <option value="30">30 anos</option>
+                                <option value="40">40 anos</option>
+                                <option value="50">50 anos</option>
+                                <option value="60">60 anos</option>
+                                <option value="70">70 anos</option>
+                                <option value="80">80 anos</option>
+                                <option value="90">90 anos</option>
+                                <option value="100">100 anos</option>
+                              </select>
+                        </div>
+                        <div class="d-flex justify-content-center container align-items-center">
+                            <button type="submit" class="btn btn-outline-danger d-flex" onclick="calcular(); return false;">Calcular!</button>
+                        </div>
+                    </form>
+               </div>
+            </div>
+        </div>
+        <div class="text-center resultado d-none my-3 container justify-content-center">
+            <h2 class=" container-a"> Olá, usuário! Juntando 100 reais a cada mês, você terá R$3545.93 em dois anos!</h2>
+            <button type="submit" class="btn btn-outline-danger my-3" onclick="voltar(); return false;">Simular novamente</button>
+        </div>
+    <script type="text/javascript" src="_js/javascript.js"></script>
+    </body>
+</html>
