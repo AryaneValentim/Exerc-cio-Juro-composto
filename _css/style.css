@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    font-family: 'Souce Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0%;
+}
+
+h1, h2 {
+    color: #dc3545;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.back {
+    background-color: #f0f3f7;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  
+}
+.sombra {
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+}
+img {
+    height: 105px;
+    background-color: #f0f3f7;
+}
+
+
+.container-a {
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    text-align: center;    
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+@media (min-width: 576px)
+{
+  .container, .container-sm
+  {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px)
+{
+  .container, .container-md, .container-sm
+  {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1140px;
+  }
+}
